@@ -8,8 +8,7 @@ router.get('/', (req, res, next) => {
   })
     .then(reviews => res.json(reviews))
     .catch(next)
-  }
-)
+})
 
 // GET api/reviews/:reviewId
 router.get('/:reviewId', (req, res, next) => {

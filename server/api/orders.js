@@ -3,6 +3,7 @@ const { Order, Product } = require('../db/models');
 module.exports = router;
 
 // GET api/orders
+// JM - not as RESTFUL, reconsider the structure of your routes for orders
 router.get('/:userId', (req, res, next) => {
   Order.findAll({
 		where: {
