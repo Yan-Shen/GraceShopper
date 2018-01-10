@@ -7,6 +7,7 @@ const User = db.define('user', {
     type: Sequelize.STRING,
     unique: true,
     allowNull: false
+    // JM - email validation?
   },
   password: {
     type: Sequelize.STRING
@@ -19,9 +20,12 @@ const User = db.define('user', {
   },
 	isAdmin: {
 		type: Sequelize.BOOLEAN
+    // JM - defaultValue
 	},
 	address: {
 		type: Sequelize.STRING
+    // TEXT? maybe even break it down into street, city, ZIP
+    // JM - validations everywhere!
 	},
 	phone: {
 		type: Sequelize.STRING(15)

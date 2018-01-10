@@ -10,3 +10,4 @@ const Order = db.define('order', {
 
 module.exports = Order;
 
+// JM - have you considered a LineItem model?

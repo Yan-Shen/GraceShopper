@@ -6,11 +6,13 @@ const Review = db.define('review', {
     type: Sequelize.TEXT,
     allowNull: false,
     validate: {
+      // JM - try just the straight-up array
       len: {
         args: [20, 5000],
       }
     }
   },
+  // JM - consider a methd to calculate avg rating
   rating: {
     type: Sequelize.INTEGER,
     allowNull: false,

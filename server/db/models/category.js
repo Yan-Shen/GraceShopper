@@ -2,6 +2,7 @@ const Sequelize = require('sequelize')
 const db = require('../db')
 
 const Category = db.define('category', {
+  // JM - not ideal :)
   id: {
     type: Sequelize.INTEGER,
     unique: true,

@@ -19,6 +19,7 @@ router.get('/:productId', (req, res, next) => {
         .catch(next);
 });
 
+
 // POST api/products
 router.post('/', (req, res, next) => {
     Product.create(req.body)

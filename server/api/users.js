@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { User } = require('../db/models');
 module.exports = router;
 
+
 // GET api/users
 router.get('/', (req, res, next) => {
   User.findAll({})
@@ -9,6 +10,7 @@ router.get('/', (req, res, next) => {
     .catch(next)
 });
 
+// JM - just :id is fine
 // GET api/users/:userId
 router.get('/:userId', (req, res, next) => {
     const id = req.params.userId;
@@ -18,6 +20,7 @@ router.get('/:userId', (req, res, next) => {
         })
         .catch(next);
 });
+
 
 // POST api/users
 router.post('/', (req, res, next) => {
