@@ -62,7 +62,7 @@ class Navbar extends Component {
           <NavLink exact to="/search">
           <button id="shopBtn" className="fontSpecial fontBlack">SEARCH</button>
           </NavLink>
-					<span className="fontSpecial fontBlack">RAMEN STORY</span>
+					<NavLink exact to='/ramen-story' className="fontSpecial fontBlack">RAMEN STORY</NavLink>
           </div>
 					{
 						isLoggedIn
@@ -78,7 +78,6 @@ class Navbar extends Component {
 						    <Link className="fontSpecial fontBlack " to="/signup">SIGNUP</Link>
 						  </div>
 					}
-					<NavLink to={'/orders-history'}><span className="fontSpecial fontBlack" >MY ORDERS</span></NavLink>
 					<div className="flex-container-row">
 						<span><i className="material-icons">shopping_cart</i></span>
           <div className="badgeContainer">
